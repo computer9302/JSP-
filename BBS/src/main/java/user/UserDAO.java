@@ -53,6 +53,7 @@ public int login(String userID, String userPassword) {
 
 }
 
+
 public int join(User user) {
 	String SQL= "INSERT INTO USER VALUES (?, ?, ?, ?, ?)";
 	try {

@@ -32,13 +32,13 @@
 	{
 		UserDAO userDAO = new UserDAO();
 		int result = userDAO.join(user);
-		if(result==-1) //이미 존재하는 아이디입니다가 나오지 않음.
+		if(result == -1) //이미 존재하는 아이디입니다가 나오지 않음.
 		{
 			PrintWriter script = response.getWriter();
 			script.println("<script>");
 			script.println("alert('아이디가 이미 존재하네요~')");
 			script.println("history.back()");
-			script.println("<script>");
+			script.println("</script>");
 		}
 		
 		else{
